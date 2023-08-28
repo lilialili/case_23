@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+This file defines a React functional component named DataGenerator. This component generates and displays data for movie titles and credits. It also provides buttons to generate and download the data.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+generateTitles(): Generates an array of synthetic movie titles with various attributes.
+generateCredits(titles): Generates an array of synthetic credits linked to the movie titles.
+handleGenerate(): Handles the generation of both titles and credits data arrays.
+handleDownload(data, filename): Downloads a CSV file containing the given data.
+Tests in DataGenerator.test.js
+This file contains tests for the DataGenerator component using the React Testing Library.
 
-## Available Scripts
+it('renders without crashing'): Checks if the component renders without any errors.
+it('has a Generate Data button'): Ensures that the "Generate Data" button is present in the rendered component.
+it('generates data on button click'): Simulates clicking the "Generate Data" button and checks if download buttons appear.
+it('shows download buttons after generating data'): Simulates clicking the "Generate Data" button and checks if download buttons are displayed.
+it('titles and credits have 100 records each after generating data'): Simulates clicking the "Generate Data" button and verifies that both titles and credits arrays have 100 records each.
+it('downloads titles data'): Simulates clicking the "Generate Data" button, then the "Download Titles" button, and ensures that the download function is called.
+Please note that some parts of the code were simplified for the purpose of explaining the concepts and writing tests. In a real-world scenario, you might need to adjust the code to your project structure and requirements.
 
-In the project directory, you can run:
+To learn more about the concepts and libraries used in this code, you can refer to their documentation:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React
+React Testing Library
+faker.js
+PapaParse
+These documentation resources will provide you with in-depth explanations, usage examples, and best practices for working with React, testing React components, generating synthetic data, and parsing CSV files.
